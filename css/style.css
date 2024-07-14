@@ -1,0 +1,181 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif; /* Встановлює шрифт для всього документа */
+    margin: 0; /* Забирає зовнішні відступи */
+    padding: 0; /* Забирає внутрішні відступи */
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: #333; /* Колір тла */
+    color: #fff; /* Колір тексту */
+    padding: 20px; /* Зовнішні відступи */
+    text-align: center; /* Вирівнює текст по центру */
+}
+
+/* Стилі для основного вмісту */
+main {
+    padding: 20px; /* Зовнішні відступи */
+    display: flex; /* Встановлює flex-контейнер */
+    flex-wrap: wrap; /* Дозволяє контейнеру обгортати рядки */
+    justify-content: space-around; /* Вирівнює елементи по центру і рівномірно розподіляє простір навколо них */
+}
+
+/* Стилі для продукту */
+.product {
+    width: 300px; /* Ширина елементу */
+    border: 1px solid #ccc; /* Товщина і колір рамки */
+    border-radius: 5px; /* Закругленість кутів */
+    margin-bottom: 20px; /* Зовнішні відступи знизу */
+    padding: 10px; /* Внутрішні відступи */
+    transition: transform 0.3s ease; /* Плавна анімація */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Збільшує масштаб при наведенні курсора */
+}
+
+.product img {
+    width: 100%; /* Ширина зображення */
+    border-radius: 5px; /* Закругленість кутів */
+}
+
+.product h2 {
+    margin-top: 10px; /* Внутрішні відступи зверху */
+    font-size: 20px; /* Розмір шрифту */
+}
+
+.product p {
+    font-size: 16px; /* Розмір шрифту */
+}
+
+.product button {
+    background-color: #333; /* Колір тла кнопки */
+    color: #fff; /* Колір тексту */
+    border: none; /* Видаляє рамку */
+    padding: 10px 20px; /* Внутрішні відступи */
+    border-radius: 5px; /* Закругленість кутів */
+    cursor: pointer; /* Змінює курсор при наведенні */
+    margin-top: 10px; /* Зовнішні відступи зверху */
+    transition: background-color 0.3s ease; /* Плавна зміна кольору тла */
+}
+
+.product button:hover { 
+    background-color: #555; /* Колір тла кнопки при наведенні */
+}
+
+/* Стилі для заголовка (знову) */
+header {
+    background-color: #333; /* Колір тла */
+    color: #fff; /* Колір тексту */
+    padding: 10px 20px; /* Зовнішні відступи */
+    display: flex; /* Встановлює flex-контейнер */
+    justify-content: space-between; /* Вирівнює елементи по краях контейнера */
+    align-items: center; /* Вирівнює елементи по центру по вертикалі */
+}
+
+/* Стилі для логотипу */
+.logo {
+    font-size: 24px; /* Розмір шрифту */
+    font-weight: bold; /* Товщина шрифту */
+    margin: 0px;
+}
+
+/* Стилі для поля пошуку */
+.search {
+    padding: 10px; /* Внутрішні відступи */
+    border: none; /* Видаляє рамку */
+    border-radius: 20px; /* Закругленість кутів */
+    width: 300px; /* Ширина поля */
+    transition: all 0.3s ease; /* Плавна анімація */
+}
+
+.search:focus {
+    width: 400px; /* Змінює ширину поля при фокусуванні */
+}
+
+/* Стилі для навігаційного меню */
+nav ul {
+    list-style-type: none; /* Видаляє маркери списку */
+    margin: 0; /* Забирає зовнішні відступи */
+    padding: 0; /* Забирає внутрішні відступи */
+    text-align: center; /* Вирівнює тексти по центру */
+}
+
+nav ul li {
+    display: inline-block; /* Розташовує пункти списку в ряд */
+    margin: 0 10px; /* Зовнішні відступи по горизонталі */
+}
+
+nav ul li a {
+    color: #fff; /* Колір тексту */
+    text-decoration: none; /* Видаляє підкреслення */
+    padding: 10px 10px; /* Внутрішні відступи */
+    transition: all 0.3s ease; /* Плавна анімація */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Колір тла при наведенні */
+    border-radius: 5px; /* Закругленість кутів */
+}
+
+/* Стилі для каталогу */
+.centered-katalog {
+    text-align: center; /* Вирівнює блок по центру */
+    margin-top: 30px;
+
+}
+
+.katalog {
+    display: inline-block; /* Робить елементи блоку відображаються в рядок */
+    padding: 0; /* Забирає внутрішні відступи */
+    list-style: none; /* Видаляє маркери списку */
+}
+
+.katalog li {
+    display: inline-block; /* Відображає елементи списку в рядок */
+}
+
+.katalog li a {
+    display: block; /* Робить посилання блочними елементами */
+    width: 180px; /* Задає ширину елементів */
+    height: 60px; /* Задає висоту елементів */
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center; /* Вирівнює текст по центру */
+    line-height: 60px; /* Задає висоту рядка тексту для центрування по вертикалі */
+    text-decoration: none; /* Видаляє підкреслення */
+    color: black;
+    background-color: #F2F1F1;
+    size:25px ;
+     transition: color 0.6s ease; /* Плавна зміна кольору тексту при наведенні */
+}
+.katalog li a:hover {
+    color: #fff; /* Змінює колір тексту при наведенні */
+    background-color: #555; /* Задає колір тла при наведенні */
+}
+.social-icon {
+     display: inline-block;
+}
+.social-icon a {
+    display: inline-block;
+   color: black;
+   list-style: none;
+}
+.social-icon li {
+    display: inline-block;
+   color: black;
+   
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+    bottom: 0;
+    width: 100%;
+} 
